@@ -8,6 +8,8 @@ import { HijoComponent } from './hijo/hijo.component';
 import { DirectivasComponent } from './directivas/directivas.component';
 import { EstiloHermanosDirective } from './estilo-hermanos.directive';
 import { PipesComponent } from './pipes/pipes.component';
+import { MiPipePersonalizadoPipe } from './mi-pipe-personalizado.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,15 @@ import { PipesComponent } from './pipes/pipes.component';
     HijoComponent,
     DirectivasComponent,
     EstiloHermanosDirective,
-    PipesComponent
+    PipesComponent,
+    MiPipePersonalizadoPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

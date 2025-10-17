@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipes.component.css']
 })
 export class PipesComponent {
-
+  fecha : Date = new Date()
+  precio : number = 1000;
 }

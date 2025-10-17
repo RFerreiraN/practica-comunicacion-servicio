@@ -1,1 +1,11 @@
-<p>pipes works!</p>
+<h1>Pipes Personalizados: </h1>
+<p>{{ 'este texto tiene aplicado un pipe personalizado que capitaliza todas las letras' | miPipePersonalizado }}</p>
+<h2>Pipes Nativos: </h2>
+<h3>Fecha: </h3>
+<p>{{ fecha | date }} date normal</p>
+<p>{{ fecha | date:'short' }} date short</p>
+<p>{{ fecha | date:'fullDate' }} fullDate</p>
+<br>
+<h3>Currency: </h3>
+<p>El precio es: {{ precio | currency:'EUR' }}</p>
+<p>El precio es: {{ precio | currency: 'USD' }}</p>
