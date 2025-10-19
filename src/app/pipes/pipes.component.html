@@ -1,5 +1,5 @@
 <h1>Pipes Personalizados: </h1>
-<p>{{ 'este texto tiene aplicado un pipe personalizado que capitaliza todas las letras' | miPipePersonalizado }}</p>
+<p>{{ mensaje | miPipePersonalizado }}</p>
 <h2>Pipes Nativos: </h2>
 <h3>Fecha: </h3>
 <p>{{ fecha | date }} date normal</p>
@@ -9,3 +9,9 @@
 <h3>Currency: </h3>
 <p>El precio es: {{ precio | currency:'EUR' }}</p>
 <p>El precio es: {{ precio | currency }}</p>
+<br>
+<h3>Decimal Pipe: </h3>
+<p>El valor de pi es:  {{ pi | number: '1.2-2' }}</p>
+<br>
+<h3>Porcentaje Pipe: </h3>
+<p>El Porcentaje es: {{ factor | percent }}</p>
